@@ -1,4 +1,8 @@
-
 function displayMessage() {
     alert('Hello, welcome to my personal website!');
+    changeBackgroundColor(); // Change background color on button click
+}
+
+function changeBackgroundColor() {
+    document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 }

@@ -1,13 +1,15 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
     background-color: #f4f4f9;
     color: #333;
+    transition: background-color 0.5s ease; /* Smooth transition for background color change */
 }
 
 h1 {
     color: #026670;
+    text-align: center;
+    animation: fadeIn 2s ease-out; /* Fade-in effect for the header */
 }
 
 button {
@@ -17,4 +19,18 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    animation: pop 0.5s ease-out; /* Pop effect for the button */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Keyframes for pop animation */
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }
